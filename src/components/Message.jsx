@@ -4,9 +4,6 @@ import { ChatContext } from "../context/ChatContext";
 
 const Message = ({message}) => {
   const currTime = new Date().toLocaleTimeString();
-  // const date = new Date();
-    // const showTime = date.getHours() % 12 || 12 + ':' + date.getMinutes();
-    // const ampm =  date.getHours() >= 12 ? 'PM' : 'AM';
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
 
